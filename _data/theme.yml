@@ -34,12 +34,12 @@
 #
 # # Hero colors
 #   hero:
-#     hero-bg: 'white'
+#     hero-bg: 'red'
 #     hero-header: 'DarkSlateGray'
 #     hero-header-alt: 'DarkSlateGray'
 #     hero-text: 'Gray'
 #     hero-link: 'DodgerBlue'
-#     hero-button-bg: 'DodgerBlue'
+#     hero-button-bg: 'white'
 #     hero-button-text: 'white'
 #
 # # Top navigation colors

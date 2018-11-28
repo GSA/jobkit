@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/GSA/jobkit.git
-  revision: 
+  remote: https://github.com/18F/uswds-jekyll.git
+  revision: b0129862c899105fb32a0ed60448b4d708dc1436
   specs:
     uswds-jekyll (4.1.0)
       jekyll (~> 3.4)
