@@ -1,8 +1,10 @@
 {% if hero %}
   <section class="usa-hero"{% if hero.image %}
     style="background-image: url('{{ hero.image | relative_url }}')"{% endif %}>
-    <div class="usa-grid">
-      <div class="usa-hero-callout">
+    <div class="grid-container">
+      <div>
+        <img src="/assets/img/jobkit_logo.png">
+        <hr class="border-top-05 border-secondary margin-left-neg-3px width-tablet">
         {% if hero.callout %}
         <h2>
           {% if hero.callout.alt %}
@@ -21,7 +23,7 @@
         {{ hero.content | markdownify }}
   
         {% if hero.button %}
-        <a class="usa-button"
+        <a class="usa-button usa-button-outline-inverse"
           href="{{ hero.button.href | relative_url }}">
           {{ hero.button.text }}
         </a>

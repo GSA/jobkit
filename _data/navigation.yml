@@ -11,19 +11,21 @@ primary:
         href: /
 
 footer:
-  - text: Documentation
+  - text: Link one
     href: /docs/
-  - text: Demo link one
+  - text: Link two
     href: /
-  - text: Demo link two
+  - text: Link three
     href: /
 
 docs:
+  - text: Overview
+    href: /#overview
+  - text: Value and Use Cases
+    href: /#value
   - text: Documentation
-    href: /docs/
-  - text: Installation
-    href: /
-  - text: Upgrading
-    href: /
-  - text: Help
-    href: /
+    href: /#documentation
+  - text: Partner with Us
+    href: /#partner
+  - text: Register for Updates
+    href: /#register
