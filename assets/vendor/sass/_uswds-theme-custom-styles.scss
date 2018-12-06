@@ -20,10 +20,19 @@ i.e.
 ----------------------------------------
 */
 
+header {
+  .jobkit-logo {
+    height: 31px;
+  }
+  .usa-nav-container {
+    height: 70px;
+  }
+}
+
 .usa-hero {
   img {
-    @include at-media('desktop') {
-    margin-left:-8rem;
+    @include at-media('desktop-lg') {
+    margin-left: -8rem;
    }
   }
   hr {
