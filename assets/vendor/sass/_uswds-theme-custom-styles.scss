@@ -22,7 +22,7 @@ i.e.
 
 .usa-hero {
   img {
-    @include at-media('tablet') {
+    @include at-media('desktop') {
     margin-left:-8rem;
    }
   }
