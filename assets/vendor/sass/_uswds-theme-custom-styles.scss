@@ -22,10 +22,64 @@ i.e.
 
 .usa-hero {
   img {
+    @include at-media('tablet') {
     margin-left:-8rem;
+   }
   }
   hr {
     margin-left: -20rem;
   }
 }
+
+article {
+  hr {
+    border: 0;
+    height: 2px;
+    background: #d6d7d9;
+    margin: 32px 0;
+  }
+
+  h2 {
+    display: inline-block;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      background: linear-gradient(30deg,#0050d8 10%,#e52207 90%);
+    }
+  }
+}
+
+.usa-sidenav {
+  border-bottom: none;
+}
+
+.usa-sidenav-item {
+  border-top: none;
+}
+
+.usa-sidenav a {
+  color: #323a45;
+  text-decoration: none;
+  transition: padding .5s ease;
+  position: relative;
+
+  &:hover {
+  background-color: transparent;
+  color: #323a45;
+  display: block;
+  padding-left: 8px;
+  position: relative;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: .5s;
+  transition-property: padding;
+  transition-timing-function: ease;
+  }
+}
+
 
