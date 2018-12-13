@@ -68,6 +68,12 @@ article {
   }
 }
 
+aside {
+  @include at-media('desktop-lg') {
+    @include u-margin-left(-3rem)
+  }
+}
+
 .usa-sidenav {
   border-bottom: none;
 }
