@@ -59,12 +59,19 @@ article {
       left: 0;
       height: 4px;
       width: 100%;
-      background: linear-gradient(30deg,#0050d8 10%,#e52207 90%);
+      background: #e52207;
     }
   }
-  li img {
-    display: block;
+  li { 
+    img {
+    display: inline-block;
     padding-top: 1em;
+    }
+
+    h3 {
+      display: inline-block;
+      margin-left: 1rem;
+    }
   }
 }
 
