@@ -3,8 +3,15 @@
     style="background-image: url('{{ hero.image | relative_url }}')"{% endif %}>
     <div class="grid-container">
       <div>
-        <img src="{{ site.baseurl }}/assets/img/jobkit_logo_wht.svg">
+        <picture>
+          <source
+            media="(min-width: 640px)"
+            srcset="{{ site.baseurl }}/assets/img/jobkit_logo_wht.svg">
+            <img src="{{ site.baseurl }}/assets/img/jobkit_logo_text.svg">
+        </picture>
+
         <hr class="border-top-1 border-secondary margin-left-neg-3px width-tablet">
+        
         {% if hero.callout %}
         <h2>
           {% if hero.callout.alt %}
