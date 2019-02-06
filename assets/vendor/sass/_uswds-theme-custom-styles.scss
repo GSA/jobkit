@@ -75,9 +75,9 @@ article {
   }
 }
 
-    .shadow {
-      filter: drop-shadow(0 0 1px #000000);
-    }
+.shadow {
+  filter: drop-shadow(0 0 1px #000000);
+}
 
 aside {
   @include at-media('desktop-lg') {
@@ -113,4 +113,11 @@ aside {
   }
 }
 
+.usa-footer-logo a {
+  text-decoration: none;
+}
 
+.usa-footer-logo-img {
+  max-width: 5rem;
+  width: 3rem;
+}
