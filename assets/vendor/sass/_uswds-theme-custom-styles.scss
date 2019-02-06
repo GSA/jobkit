@@ -75,6 +75,10 @@ article {
   }
 }
 
+    .shadow {
+      filter: drop-shadow(0 0 1px #000000);
+    }
+
 aside {
   @include at-media('desktop-lg') {
     @include u-margin-left(-3rem)
