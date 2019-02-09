@@ -31,7 +31,7 @@ heading: GSA
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: /assets/img/gsa-logo-dark.jpg
+  - src: /assets/img/dist/gsa-logo-dark.jpg
     alt: GSA
 
 # Configuration for footer contact links
