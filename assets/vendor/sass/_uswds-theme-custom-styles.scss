@@ -120,8 +120,15 @@ aside {
   }
 }
 
-.usa-footer-logo a {
+.usa-footer-logo {
+  a {
   text-decoration: none;
+  }
+  @include at-media('desktop-lg') {
+    &-heading {
+    width: 80%;
+  }
+  }
 }
 
 .usa-footer-logo-img {
