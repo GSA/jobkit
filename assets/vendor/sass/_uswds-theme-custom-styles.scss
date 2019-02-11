@@ -30,7 +30,9 @@ header {
 }
 
 .usa-hero {
-  img {
+    background-image: url('/assets/img/dist/banner.png');
+    background-image: url('/assets/img/dist/banner.webp');
+  .hero-logo {
     @include at-media('desktop-lg') {
     margin-left: -8rem;
    }
