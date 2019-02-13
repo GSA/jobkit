@@ -30,16 +30,26 @@ header {
 }
 
 .usa-hero {
-    background-image: url('/assets/img/dist/banner.png');
-    background-image: url('/assets/img/dist/banner.webp');
+  overflow: hidden;
   .hero-logo {
     @include at-media('desktop-lg') {
-    margin-left: -8rem;
    }
   }
   hr {
     margin-left: -20rem;
   }
+  .usa-button {
+    max-width: 90vw;
+  }
+}
+
+.hero-bg {
+  min-width: 1000px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 150px;
 }
 
 article {
@@ -122,8 +132,15 @@ aside {
   }
 }
 
-.usa-footer-logo a {
+.usa-footer-logo {
+  a {
   text-decoration: none;
+  }
+  @include at-media('desktop-lg') {
+    &-heading {
+    width: 80%;
+  }
+  }
 }
 
 .usa-footer-logo-img {
