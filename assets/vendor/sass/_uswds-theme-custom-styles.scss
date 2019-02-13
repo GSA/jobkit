@@ -36,6 +36,7 @@ header {
   overflow: hidden;
   .hero-logo {
     @include at-media('desktop-lg') {
+      margin-left: -8rem;
    }
   }
   hr {
