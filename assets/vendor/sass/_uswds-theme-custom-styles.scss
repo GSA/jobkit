@@ -30,6 +30,9 @@ header {
 }
 
 .usa-hero {
+  height: 400px;
+  max-height: 60vh;
+  min-height: 322px;
   overflow: hidden;
   .hero-logo {
     @include at-media('desktop-lg') {
