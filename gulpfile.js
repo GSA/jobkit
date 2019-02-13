@@ -25,6 +25,8 @@ var replace       = require('gulp-replace');
 var sass          = require('gulp-sass');
 var sourcemaps    = require('gulp-sourcemaps');
 var uswds         = require('./node_modules/uswds-gulp/config/uswds');
+var imagemin      = require('gulp-imagemin');
+ 
 
 /*
 ----------------------------------------
@@ -57,6 +59,12 @@ const CSS_DEST = './assets/vendor/css';
 TASKS
 ----------------------------------------
 */
+
+gulp.task('optimize-images', () =>
+    gulp.src('./assets/img/src/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./assets/img/dist'))
+);
 
 gulp.task('copy-uswds-setup', () => {
   return gulp.src(`${uswds}/scss/theme/**/**`)
@@ -122,6 +130,6 @@ gulp.task('watch-sass', function () {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series('build-sass'));
 });
 
-gulp.task('watch', gulp.series('build-sass', 'watch-sass'));
+gulp.task('watch', gulp.series('optimize-images', 'build-sass', 'watch-sass'));
 
 gulp.task('default', gulp.series('watch'));

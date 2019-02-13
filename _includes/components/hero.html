@@ -1,13 +1,16 @@
-{% if hero %}
-  <section class="usa-hero"{% if hero.image %}
-    style="background-image: url('{{ hero.image | relative_url }}')"{% endif %}>
+<section class="usa-hero">
+    <picture>
+        <source
+          srcset="{{ site.baseurl }}/assets/img/dist/banner.webp">
+          <img class="hero-bg" src="{{ site.baseurl }}/assets/img/dist/banner.png">
+      </picture>
     <div class="grid-container">
-      <div>
-        <picture>
+      <div class="hero-overlay">
+        <picture class="hero-logo">
           <source
             media="(min-width: 640px)"
-            srcset="{{ site.baseurl }}/assets/img/jobkit_logo_wht.svg">
-            <img src="{{ site.baseurl }}/assets/img/jobkit_logo_text.svg">
+            srcset="{{ site.baseurl }}/assets/img/dist/jobkit_logo_wht.svg">
+            <img src="{{ site.baseurl }}/assets/img/dist/jobkit_logo_text.svg">
         </picture>
 
         <hr class="border-top-1 border-secondary margin-left-neg-3px width-tablet">
@@ -19,7 +22,6 @@
           {% endif %}
           {{ hero.callout.text | default: hero.callout }}
         </h2>
-        {% endif %}
   
         {% if hero.link %}
         <a class="usa-hero-link" href="{{ hero.link.href | relative_url }}">

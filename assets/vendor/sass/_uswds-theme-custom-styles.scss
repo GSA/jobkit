@@ -30,14 +30,34 @@ header {
 }
 
 .usa-hero {
-  img {
+  height: 400px;
+  max-height: 60vh;
+  min-height: 322px;
+
+  overflow: hidden;
+  @include at-media('tablet') {
+    padding-top: 0;
+  }
+  .hero-logo {
     @include at-media('desktop-lg') {
-    margin-left: -8rem;
+      margin-left: -8rem;
    }
   }
   hr {
     margin-left: -20rem;
   }
+  .usa-button {
+    max-width: 90vw;
+  }
+}
+
+.hero-bg {
+  min-width: 1000px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 150px;
 }
 
 article {
