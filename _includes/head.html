@@ -1,0 +1,7 @@
+  <head>
+    {% include meta.html %}
+    {% include styles.html %}
+    {% if site.google_analytics_ua or site.dap_agency %}
+      {% include analytics.html %}
+    {% endif %}
+  </head>

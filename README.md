@@ -41,6 +41,23 @@ npm start
 
 You should now be able to preview the site on your local machine at [http://localhost:4000/](http://localhost:4000/).
 
+### Structure
+JobKit is currently a single page website, but is architected to easily allow additional content and functionality features. 
+
+* `_layouts/` - Contains any page layouts needed for the site. Currently, the only layout is `home.html`. Any additional layouts created should be located here.
+* `pages` - Any site pages should be contained here. Currently, the only page is `landing.html`.
+* `_includes/` - Contains any page components. Items that are or may be used more than once should be included as a component and located here. For items in this folder, use the `{% include file_name.html %}` syntax to pull the content of the file in to your page. 
+
+Current includes are:
+** `head.html`
+** `header.html`
+** `sidenav.html`
+** `styles.html`
+** `components/footer--medium.html`
+** `components/hero.html`
+
+NOTE: items in the `_includes/components` folders are organized here so that they overwrite the original files used in the [uswds-template](https://github.com/18F/uswds-jekyll).
+
 ### Contributing content and code
 
 1. Fork the repository (or clone it if you have commit access)
