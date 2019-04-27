@@ -46,6 +46,7 @@ JobKit is currently a single page website, but is architected to easily allow ad
 
 * `_layouts/` - Contains any page layouts needed for the site. Currently, the only layout is `home.html`. Any additional layouts created should be located here.
 * `pages` - Any site pages should be contained here. Currently, the only page is `landing.html`.
+* `_data.yml` - Contains any data needed for the site. You'll find the `navigation.yml` file here. It contains the items for the sidenav bar.
 * `_includes/` - Contains any page components. Items that are or may be used more than once should be included as a component and located here. For items in this folder, use the `{% include file_name.html %}` syntax to pull the content of the file in to your page. 
 
 Current includes are:

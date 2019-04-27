@@ -1,0 +1,9 @@
+sidenav:
+  - text: Overview
+    href: /#overview
+  - text: Value and Use Cases
+    href: /#value
+  - text: Documentation
+    href: /#documentation
+  - text: Partner with Us
+    href: /#partner
