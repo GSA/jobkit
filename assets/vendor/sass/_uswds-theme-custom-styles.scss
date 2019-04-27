@@ -151,11 +151,31 @@ aside {
     width: 80%;
     }
   }
-}
 
-.usa-footer-logo-heading {
+  .image-front {
+    opacity: 1;
+  }
 
-  &:hover {
-    color: #1a4480;
+  .image-back {
+    position: absolute;
+    margin-left: .25rem;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
   }
 }
+
+  .agency-card:hover {
+    .usa-footer-logo-heading {
+      color: #1a4480;
+      transition: color .2s linear;
+    }
+
+    .image-back {
+      opacity: 1;
+      transition: opacity .2s linear;
+  }
+}
+
+
