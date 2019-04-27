@@ -145,14 +145,17 @@ aside {
   a {
   text-decoration: none;
   }
+
   @include at-media('desktop-lg') {
     &-heading {
     width: 80%;
-  }
+    }
   }
 }
 
-.usa-footer-logo-img {
-  max-width: 5rem;
-  width: 3rem;
+.usa-footer-logo-heading {
+
+  &:hover {
+    color: #1a4480;
+  }
 }
