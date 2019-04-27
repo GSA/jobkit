@@ -11,8 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/GSA/jobkit.git"
   },
-  "author": "S. Green",
-  "license": "ISC",
+  "author": "U.S. General Services Administration, Technology Transformation Service",
+  "core team": [
+    "Sara Cope <sara.cope@gsa.gov>",
+    "Stephanie Green <stephanie.green@gsa.gov>"
+  ],
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/GSA/jobkit/issues"
   },
