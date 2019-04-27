@@ -1,24 +1,4 @@
-primary:
-  - text: Documentation
-    href: /docs/
-  - text: Navigation section
-    links:
-      - text: Demo link A
-        href: /
-      - text: Demo link B
-        href: /
-      - text: Demo link C
-        href: /
-
-footer:
-  - text: Link one
-    href: /docs/
-  - text: Link two
-    href: /
-  - text: Link three
-    href: /
-
-docs:
+sidenav:
   - text: Overview
     href: /#overview
   - text: Value and Use Cases
