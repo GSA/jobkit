@@ -145,14 +145,37 @@ aside {
   a {
   text-decoration: none;
   }
+
   @include at-media('desktop-lg') {
     &-heading {
     width: 80%;
+    }
   }
+
+  .image-front {
+    opacity: 1;
+  }
+
+  .image-back {
+    position: absolute;
+    margin-left: .25rem;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
   }
 }
 
-.usa-footer-logo-img {
-  max-width: 5rem;
-  width: 3rem;
+  .agency-card:hover {
+    .usa-footer-logo-heading {
+      color: #1a4480;
+      transition: color .2s linear;
+    }
+
+    .image-back {
+      opacity: 1;
+      transition: opacity .2s linear;
+  }
 }
+
+
